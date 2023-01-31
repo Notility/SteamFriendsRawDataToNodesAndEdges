@@ -77,7 +77,6 @@ def createEdges(json_files):
 
 #Initial Indexing of folder
 jFiles = [pos_json for pos_json in os.listdir(pathto) if pos_json.endswith(".json")]
-createEdges(jFiles)
 #Starting Json File
 jFile = input("Please Enter Valid Steam Id to search: ")
 if jFile+'.json' not in jFiles:
@@ -99,3 +98,4 @@ with open(pathto+jFile+'.json',"r") as json_fil:
 jFile = [pos_json for pos_json in os.listdir(pathto) if pos_json.endswith(".json")]
 removeFL(jFile)
 createNodes(jFile)
+createEdges(jFiles)

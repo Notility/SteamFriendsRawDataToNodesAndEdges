@@ -12,7 +12,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 ##TAKING DATA FROM ALL JSON FILES TO OUTPUT INTO OUTPUT FILE 
 pathto = "jsonFiles\\"
-steamApiKey = "AEC4752C93B5A9426B6096E8B60CE3D7"
+steamApiKey = "XXXXXXXXXXXXXXXXX"
 
 def createNodes(json_files):
     mdata = pd.read_csv('jsonFiles\csvFiles\Nodetemplate.csv')
